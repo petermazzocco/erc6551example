@@ -1,13 +1,13 @@
-import { Providers } from './providers'
-
+import { Providers } from "./providers";
+import "./globals.css";
 export const metadata = {
-  title: 'wagmi',
-}
+  title: "ERC-6551",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -15,5 +15,5 @@ export default function RootLayout({
         <Providers>{children}</Providers>
       </body>
     </html>
-  )
+  );
 }
